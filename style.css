@@ -1,0 +1,82 @@
+body {
+    background-color: bisque;
+}
+
+.container {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.circle {
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.anim-1 {
+    margin-left: 80px;
+    animation: 2s ease-in-out 0s infinite  alternate animation-1;  
+}
+
+@keyframes animation-1 {
+    from {
+        margin-top: 0%;
+    }
+
+    to {
+        margin-top: 80%;
+    }
+    
+}
+
+
+.anim-2 {
+    animation: 2s ease-in-out 0s infinite  alternate animation-2; 
+    background-color: aqua; 
+}
+
+ @keyframes animation-2 {
+    0% {
+      top: 0px;
+      right: 0px;
+    }
+
+    100% { 
+      top: 160px;
+      right: 160px;
+    }  
+} 
+
+.anim-3 {
+
+    animation: 2s ease-in-out 0s infinite alternate animation-3;
+    background-color: red; 
+
+}
+
+@keyframes animation-3 {
+    
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 160px;
+        top: 0;
+    }
+    
+    75% {
+        left: 0;
+        top: 160px;
+    }
+
+    100% {
+        top: 160px;
+        left: 160px;
+    }
+} 
+
